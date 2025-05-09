@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Law | Subscription</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/LawrenzPH/Portfolio/refs/heads/main/Image/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --aray: #000000;
+            --aray1: #21bae0;
+            --aray2: #2ff8ff;
+        }
+        
+        body {
+            background: #fcfcfc;
+        }
+
+        .pricing-card {
+            transition: all 0.5s ease;
+            border: 0;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-1rem);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .highlight-card {
+            position: relative;
+            background: linear-gradient(135deg, var(--aray), var(--aray1));
+            color: white;
+        }
+
+        .highlight-card::before {
+            content: "BEST VALUE";
+            position: absolute;
+            top: 20px;
+            right: -45px;
+            background: var(--aray2);
+            color: white;
+            padding: 6px 40px;
+            transform: rotate(45deg);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            position: relative;
+            display: inline-block;
+        }
+
+        .price::before {
+            content: "$";
+            font-size: 1.5rem;
+            position: absolute;
+            left: -1.2rem;
+            top: 0.5rem;
+        }
+
+        .feature-list li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .feature-list i {
+            color: var(--aray);
+            font-size: 1.2rem;
+        }
+
+        .highlight-card .feature-list i {
+            color: white;
+        }
+
+        .btn-pricing {
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--aray);
+        }
+
+        .btn-pricing:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-heading h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--aray1);
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card {
+                margin: 1rem auto;
+                max-width: 400px;
+            }
+            
+            .highlight-card {
+                transform: scale(1);
+                margin: 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Code with Law<br>Subscription</h1>
+            <p class="text-muted">Access to 12+ coding courses designed to make you a developer. Just practical, job-focused learning — yours to keep.</p>
+        </div>
+        
+        <div class="row justify-content-center g-4">
+            
+            <div class="col-12 col-lg-4">
+                <div class="pricing-card h-100">
+                    <div class="card-body p-5">
+                        <h3 class="h4 mb-4">Basic</h3>
+                        <div class="price mb-4 text-dark">5.99<span class="text-muted fs-6">/month</span></div>
+                        
+                        <ul class="feature-list list-unstyled mb-5">
+                            <li><i class="bi bi-check2"></i>Access to 5 introductory courses</li>
+                            <li><i class="bi bi-check2"></i>10 guided projects</li>
+                            <li><i class="bi bi-check2"></i>Community support</li>
+                            <li><i class="bi bi-check2"></i>Beginner coding challenges</li>
+                        </ul>
+                        
+                        <a href="https://lawrenzph.github.io/Portfolio/" class="btn btn-pricing btn-outline-primary w-100">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-lg-4">
+                <div class="pricing-card highlight-card h-100">
+                    <div class="card-body p-5">
+                        <h3 class="h4 mb-4 text-white">Standard</h3>
+                        <div class="price mb-4 text-white">15<span class="text-white-50 fs-6">/month</span></div>
+                        
+                        <ul class="feature-list list-unstyled mb-5">
+                            <li><i class="bi bi-check2"></i>Unlimited guided projects</li>
+                            <li><i class="bi bi-check2"></i>Priority support</li>
+                            <li><i class="bi bi-check2"></i>Exclusive coding challenges</li>
+                            <li><i class="bi bi-check2"></i>Limited downloadable course content</li>
+                        </ul>
+                        
+                        <a href="https://lawrenzph.github.io/Portfolio/" class="btn btn-pricing btn-light w-100 text-white" style="background-color: var(--aray1);">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-lg-4">
+                <div class="pricing-card h-100">
+                    <div class="card-body p-5">
+                        <h3 class="h4 mb-4">Premium</h3>
+                        <div class="price mb-4 text-dark">29<span class="text-muted fs-6">/month</span></div>
+                        
+                        <ul class="feature-list list-unstyled mb-5">
+                            <li><i class="bi bi-file-earmark-code text-warning"></i>All current courses</li>
+                            <li><i class="bi bi-download"></i>Downloadable content</li>
+                            <li><i class="bi bi-bag-check"></i>All future releases included</li>
+                            <li><i class="bi bi-check2-all"></i>Early access to new courses</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Includes all features from previous plans</li>
+                        </ul>
+                        
+                        <a href="https://lawrenzph.github.io/Portfolio/" class="btn btn-pricing btn-outline-primary w-100">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
